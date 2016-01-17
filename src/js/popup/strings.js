@@ -196,6 +196,12 @@ var strings = [{
   demo: '\u0027\u0020\u004F\u0052\u0020\u0031\u003D\u0031\u0020\u002D\u002D\u0020\u0031',
   value: '\u0027\u0020\u004F\u0052\u0020\u0031\u003D\u0031\u0020\u002D\u002D\u0020\u0031'
 }, {
+  // [$gt]=
+  name: 'MongoDB injection',
+  classification: 'database injection',
+  demo: '\u005B\u0024\u0067\u0074\u005D\u003D',
+  value: '\u005B\u0024\u0067\u0074\u005D\u003D'
+}, {
   // Powerلُلُصّبُلُلصّبُررً ॣ ॣh ॣ ॣ冗
   name: 'iphone crash',
   classification: 'misc',
