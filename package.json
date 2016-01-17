@@ -1,21 +1,21 @@
 {
-  "name": "NaughtyBot",
+  "name": "Breakbot",
   "version": "0.0.1",
-  "description": "NaughtyBot scans robots.txt files explore parts of websites that owners don't want Google to find.",
+  "description": "Quickly add disruptive unicode, dangerous strings, and more to your clipboard.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jkingsman/NaughtyBot.git"
+    "url": "https://github.com/jkingsman/Breakbot.git"
   },
   "author": "Jack Kingsman <jack.kingsman@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jkingsman/NaughtyBot/issues"
+    "url": "https://github.com/jkingsman/Breakbot/issues"
   },
-  "homepage": "https://github.com/jkingsman/NaughtyBot",
+  "homepage": "https://github.com/jkingsman/Breakbot",
   "devDependencies": {
     "del": "*",
     "gulp-concat": "*",
