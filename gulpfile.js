@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
   minifyHtml = require('gulp-htmlmin'),
+  jade = require('gulp-jade'),
   minifyCss = require('gulp-cssnano'),
   concat = require('gulp-concat'),
   del = require('del'),
@@ -13,7 +14,8 @@ gulp.task('empty', function() {
 
 // minify our html
 gulp.task('html', function() {
-  gulp.src('./src/html/*.html')
+  gulp.src('./src/html/*')
+    .pipe(jade())
     .pipe(minifyHtml())
     .pipe(gulp.dest('./dist/'));
 });

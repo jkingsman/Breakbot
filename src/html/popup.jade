@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', type='text/css', href='/style.css')
+  body
+    #copiedNotification.fadeout(style='display: none;')
+      h2 Copied
+    .container
+      input#searchBox(placeholder='Search by name', autofocus='')
+      hr(style='margin: 5px;')
+      ul#stringList.list-group
+        li#noResults.list-group-item(style='display: none;')
+          | No results!
+    script(type='text/javascript', src='/popup.js', charset='UTF-8')
