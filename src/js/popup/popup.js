@@ -33,17 +33,12 @@ function showString(string, id) {
   containerli.id = 'stringID-' + id;
 
   var badge = document.createElement('span');
-  badge.className = 'badge';
+  badge.className = 'badge block-badge';
   if (string.demo === false) {
     string.demo = '(none)';
   }
 
-  var demo = string.demo;
-  // handle trimming
-  if (demo.length > 10) {
-    demo = demo.substr(0, 10) + ' [...]';
-  }
-  badge.innerText = demo;
+  badge.innerText = string.demo;
 
   var classification = document.createElement('span');
   classification.className = 'classification';
@@ -53,9 +48,9 @@ function showString(string, id) {
   label.className = 'name';
   label.innerHTML = string.name;
 
-  containerli.appendChild(badge);
   containerli.appendChild(classification);
   containerli.appendChild(label);
+  containerli.appendChild(badge);
 
   document.querySelector('#stringList').appendChild(containerli);
 }

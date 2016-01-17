@@ -20,15 +20,24 @@ body {
 }
 
 .classification {
-  position: absolute;
-  top: 0px;
+  float: right;
   font-size: 11px;
   font-style: oblique;
   color: gray;
 }
 
-.badge {
-  background-color: darkblue;
+.name {
+  font-weight: bold;
+}
+
+.block-badge {
+  float: none !important;
+  display: block !important;
+  text-align: left !important;
+  font-family: monospace;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 #searchBox {
