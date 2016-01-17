@@ -4,7 +4,7 @@ Quickly add disruptive unicode, dangerous strings, and more to your clipboard.
 BreakBot is MIT licensed and open source; contribute at https://github.com/jkingsman/Breakbot.
 
 ## Usage
-You can get Breakbot from the Chrome store, or run `gulp` and import the `dist` directory as an unpacked extension. Click the cracked egg icon on your toolbar to expand a searchable list of naughty strings.
+You can get Breakbot from the Chrome store, or run `gulp` and import the `dist` directory as an unpacked extension. Click the cracked egg icon on your toolbar to expand a searchable list of naughty strings; click a string to copy it to your clipboard.
 
 ## Installation
 
