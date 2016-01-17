@@ -243,6 +243,12 @@ var strings = [{
   demo: '\u0032\u0031\u0034\u0037\u0034\u0038\u0033\u0036\u0034\u0037',
   value: '\u0032\u0031\u0034\u0037\u0034\u0038\u0033\u0036\u0034\u0037'
 }, {
+  // ȺȾ
+  name: '2->3 byte expansion when lowercased',
+  classification: 'misc',
+  demo: '\u023A\u023E',
+  value: '\u023A\u023E'
+}, {
   // ΑʙϹᎠΕϜɢʜ1ͿΚʟΜɴΡℚƦЅΤՍѴԜΧΥΖɑƄϲԁеſƍһıϳĸｍπορԛгƽτʋνｗ×ɣᴢOIƧƷᏎƼб７Ȣ৭ː;
   name: 'homoglyh/homograph alphabet',
   classification: 'misc',
