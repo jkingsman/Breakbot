@@ -27,6 +27,10 @@ body {
   color: gray;
 }
 
+.badge {
+  background-color: darkblue;
+}
+
 #searchBox {
   width: 100%;
 }
