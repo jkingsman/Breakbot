@@ -66,6 +66,12 @@ var strings = [{
   demo: '\uFEFF\uFF21\uFF25\uFF33\uFF34\uFF28\uFF25\uFF34\uFF29\uFF23',
   value: '\uFEFF\uFF21\uFF25\uFF33\uFF34\uFF28\uFF25\uFF34\uFF29\uFF23'
 }, {
+  // ﻿�
+  name: 'unicode replacement',
+  classification: 'unicode',
+  demo: '\uFFFD',
+  value: '\uFFFD'
+}, {
   // ʇǝɯɐ ʇᴉs ɹolop ɯnsdᴉ ɯǝɹo˥
   name: 'upside down text',
   classification: 'unicode',
