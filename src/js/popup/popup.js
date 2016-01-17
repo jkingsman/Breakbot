@@ -13,7 +13,7 @@ function flashCopied() {
 }
 
 function copyToClipboard(text) {
-  var input = document.createElement('input');
+  var input = document.createElement('textarea');
   input.style.position = 'fixed';
   input.style.opacity = 0;
   input.value = text;
