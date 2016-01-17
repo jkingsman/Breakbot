@@ -24,6 +24,12 @@ var strings = [{
   classification: 'emoji/emote',
   demo: '\u00AF\u005C\u005F\u0028\u30C4\u0029\u005F\u002F\u00AF',
   value: '\u00AF\u005C\u005F\u0028\u30C4\u0029\u005F\u002F\u00AF'
+},{
+  // ( ͡° ͜ʖ ͡° )
+  name: 'lenny face',
+  classification: 'emoji/emote',
+  demo: '\u0028\u0020\u0361\u00B0\u0020\u035C\u0296\u0020\u0361\u00B0\u0020\u0029',
+  value: '\u0028\u0020\u0361\u00B0\u0020\u035C\u0296\u0020\u0361\u00B0\u0020\u0029'
 }, {
   // 😀
   name: 'smiley emoji',
