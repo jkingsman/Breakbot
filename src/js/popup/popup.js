@@ -33,7 +33,7 @@ function showString(string, id) {
   containerli.id = 'stringID-' + id;
 
   var badge = document.createElement('span');
-  badge.className = 'badge block-badge';
+  badge.className = 'demo';
   if (string.demo === false) {
     string.demo = '(none)';
   }

@@ -30,14 +30,14 @@ body {
   font-weight: bold;
 }
 
-.block-badge {
-  float: none !important;
-  display: block !important;
-  text-align: left !important;
+.demo {
+  display: block;
   font-family: monospace;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  background-color: gray;
+  color: white;
 }
 
 #searchBox {
