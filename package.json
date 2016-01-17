@@ -1,0 +1,32 @@
+{
+  "name": "NaughtyBot",
+  "version": "0.0.1",
+  "description": "NaughtyBot scans robots.txt files explore parts of websites that owners don't want Google to find.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jkingsman/NaughtyBot.git"
+  },
+  "author": "Jack Kingsman <jack.kingsman@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jkingsman/NaughtyBot/issues"
+  },
+  "homepage": "https://github.com/jkingsman/NaughtyBot",
+  "devDependencies": {
+    "del": "*",
+    "gulp-concat": "*",
+    "gulp-cssnano": "*",
+    "gulp-htmlmin": "*",
+    "gulp-uglify": "*",
+    "gulp-zip": "*",
+    "jshint-stylish": "*"
+  },
+  "dependencies": {
+    "gulp": "^3.8.11",
+    "jshint": "*"
+  }
+}

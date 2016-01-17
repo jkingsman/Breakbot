@@ -1,0 +1,69 @@
+html, body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  position: relative;
+  padding: 5px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  width: 350px;
+  height: 400px;
+  overflow: auto;
+}
+
+.list-group-item {
+  cursor: pointer;
+}
+
+.classification {
+  position: absolute;
+  top: 0px;
+  font-size: 11px;
+  font-style: oblique;
+  color: gray;
+}
+
+#searchBox {
+  width: 100%;
+}
+
+#copiedNotification {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#copiedNotification h2 {
+  font-weight: bold;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+@-webkit-keyframes fadeout{
+    0%{opacity:1;visibility:visible;}
+    99%{opacity:0;}
+    100%{opacity:0;visibility: hidden;}
+}
+.fadeout {
+    -webkit-animation:fadeout .25s linear;
+    visibility:hidden;
+}
+@-webkit-keyframes fadein{
+    0%{opacity:0;visibility:visible;}
+    100%{opacity:1;}
+}
+.fadein {
+    -webkit-animation:fadein .25s linear;
+}
