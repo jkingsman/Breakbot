@@ -74,6 +74,8 @@ function searchChangeHandler() {
     } else {
       document.querySelector('#noResults').style.display = 'none';
     }
+
+    document.querySelector('.container').scrollTop = 0;
   }
 }
 

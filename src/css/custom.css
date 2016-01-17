@@ -40,8 +40,21 @@ body {
   color: white;
 }
 
+.searchContainer {
+  position: fixed;
+  top: 0px;
+  margin: auto;
+  z-index: 10000;
+  width: 403px;
+}
+
+#stringList {
+  padding-top: 25px;
+}
+
 #searchBox {
   width: 100%;
+  margin-bottom: 5px;
 }
 
 #copiedNotification {
