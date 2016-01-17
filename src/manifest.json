@@ -3,7 +3,7 @@
   "name": "Breakbot",
   "short_name": "Breakbot",
   "version": "0.0.2",
-  "description": "Quickly add disruptive unicode, dangerous strings, and more to your clipboard.",
+  "description": "Quickly add disruptive unicode, naughty strings, and more to your clipboard.",
   "author": "Jack Kingsman <jack.kingsman@gmail.com>",
   "homepage_url": "https://github.com/jkingsman/Breakbot",
   "browser_action": {
