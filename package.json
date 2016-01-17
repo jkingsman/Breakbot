@@ -17,13 +17,14 @@
   },
   "homepage": "https://github.com/jkingsman/Breakbot",
   "devDependencies": {
-    "del": "*",
-    "gulp-concat": "*",
-    "gulp-cssnano": "*",
-    "gulp-htmlmin": "*",
+    "del": "^2.2.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-htmlmin": "^1.3.0",
+    "gulp-jade": "^1.1.0",
     "gulp-uglify": "*",
-    "gulp-zip": "*",
-    "jshint-stylish": "*"
+    "gulp-zip": "^3.0.2",
+    "jshint-stylish": "^2.1.0"
   },
   "dependencies": {
     "gulp": "^3.8.11",
