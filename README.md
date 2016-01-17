@@ -1,6 +1,8 @@
 # Breakbot
 Quickly add disruptive unicode, dangerous strings, and more to your clipboard. Spend less time googling for RTL overrides and Zalgo text, and more time pen-testing!
 
+[![Image of Chrome Store Badge](https://developer.chrome.com/webstore/images/ChromeWebStore_Badge_v2_340x96.png)](https://chrome.google.com/webstore/detail/paljnfjjeclclieknpdeljeilmmoheog)
+
 ## Usage
 You can get Breakbot from the Chrome store, or run `gulp` and import the `dist` directory as an unpacked extension. Click the cracked egg icon on your toolbar to expand a searchable list of naughty strings; click a string to copy it to your clipboard.
 
