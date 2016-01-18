@@ -131,6 +131,13 @@ var strings = [{
   demo: false,
   value: '\u200F'
 }, {
+  // &#8238;
+  name: 'RTL override (encoded)',
+  classification: 'unicode',
+  description: 'Encoded override that signals the following text (in HTML) to be interpreted in right-to-left reading direction which can badly break layouts, confuse or reverse text input systems, and generally wreak havoc with text display',
+  demo: '&#8238;',
+  value: '\u0026\u0023\u0038\u0032\u0033\u0038\u003B'
+}, {
   // [demo box]
   name: 'box drawing characters',
   classification: 'unicode',
