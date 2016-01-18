@@ -52,6 +52,8 @@ function showString(string, id) {
   containerli.appendChild(label);
   containerli.appendChild(badge);
 
+  containerli.title = string.description;
+
   document.querySelector('#stringList').appendChild(containerli);
 }
 

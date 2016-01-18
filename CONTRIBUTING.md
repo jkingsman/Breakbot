@@ -15,9 +15,10 @@ When adding strings to the file, please use the following format:
   // the string, if applicable/non-destructive
   name: 'plain english name to be displayed',
   classification: 'unicode/shell/js/etc',
+  description: 'Short, 2-3 sentence description goes here.',
   demo: 'demo text to be displayed (set to false if potentially destructive or invisible (e.g. spaces))',
   value: 'value to be copied'
 }
 ```
 
-Please escape all `value` string sequences (even ASCII) with `\uXXXX` format. [This](http://0xcc.net/jsescape/) is a great utility to do so.
+Please escape all `value` and `demo` string sequences (even ASCII) with `\uXXXX` format. [This](http://0xcc.net/jsescape/) is a great utility to do so.
