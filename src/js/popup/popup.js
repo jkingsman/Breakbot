@@ -38,7 +38,7 @@ function showString(string, id) {
     string.demo = '(none)';
   }
 
-  badge.innerText = string.demo;
+  badge.innerText = string.demo.replace(/(\r\n|\n|\r)/gm,"");
 
   var classification = document.createElement('span');
   classification.className = 'classification';

@@ -38,6 +38,7 @@ body {
   overflow: hidden;
   background-color: gray;
   color: white;
+  padding: 0px 5px;
 }
 
 .searchContainer {
