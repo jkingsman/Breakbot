@@ -38,7 +38,7 @@ function showString(string, id) {
     string.demo = '(none)';
   }
 
-  badge.innerText = string.demo.replace(/(\r\n|\n|\r)/gm,"");
+  badge.innerText = string.demo.replace(/(\r\n|\n|\r)/gm, "");
 
   var classification = document.createElement('span');
   classification.className = 'classification';
@@ -100,3 +100,25 @@ for (var i = 0; i < copyableClass.length; i += 1) {
 
 // attach the search listener
 document.querySelector('#searchBox').addEventListener('input', searchChangeHandler);
+
+// set up enter-strike listener
+function copyOnEnter(keyStrike) {
+  keyStrike = (keyStrike) ? keyStrike : ((event) ? event : null);
+  if ((keyStrike.keyCode === 13) && (document.activeElement.id === 'searchBox')) {
+    var entries = document.querySelectorAll('.list-group-item');
+
+    if (entries.length > 0) {
+      // we have entries
+      for (var i = 0; i < entries.length; i += 1) {
+        if (entries[i].style.display !== 'none') {
+          // found our first non-hidden entry; copy it
+          var id = entries[i].id.split('-')[1];
+          copyToClipboard(strings[id].value);
+          break;
+        }
+      }
+    }
+  }
+}
+
+document.onkeypress = copyOnEnter;
