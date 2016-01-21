@@ -86,15 +86,15 @@ function searchChangeHandler() {
     } else {
       names[i].style.display = 'none';
     }
-
-    if (displayedStrings === 0) {
-      document.querySelector('#noResults').style.display = 'block';
-    } else {
-      document.querySelector('#noResults').style.display = 'none';
-    }
-
-    document.querySelector('.container').scrollTop = 0;
   }
+
+  if (displayedStrings === 0) {
+    document.querySelector('#noResults').style.display = 'block';
+  } else {
+    document.querySelector('#noResults').style.display = 'none';
+  }
+
+  document.querySelector('.container').scrollTop = 0;
 }
 
 /**
