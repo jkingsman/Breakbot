@@ -17,9 +17,6 @@
   "background": {
     "page": "popup.html"
   },
-  "permissions": [
-    "clipboardWrite"
-  ],
   "icons": {
     "16": "img/breakbot-16.png",
     "48": "img/breakbot-48.png",
