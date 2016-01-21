@@ -3,6 +3,9 @@
 
 "use strict";
 
+/**
+ * Flash the "Copied" message, and close the window.
+ */
 function flashCopied() {
   var copiedElement = document.querySelector('#copiedNotification');
   copiedElement.style.display = 'flex';
@@ -12,21 +15,30 @@ function flashCopied() {
   }, 500);
 }
 
+/**
+ * Copy text to the clipboard
+ * @param {text} str The string to copy.
+ */
 function copyToClipboard(text) {
+  // create an invisible textarea
   var input = document.createElement('textarea');
   input.style.position = 'fixed';
   input.style.opacity = 0;
   input.value = text;
 
   document.body.appendChild(input);
-
   input.select();
   document.execCommand('Copy');
-
   document.body.removeChild(input);
+
   flashCopied();
 }
 
+/**
+ * Display a string
+ * @param {string} object The string to display, with id, demo, classification, and name properties.
+ * @param {id} int The index of the string being displayed in the master strings object
+ */
 function showString(string, id) {
   var containerli = document.createElement('li');
   containerli.className = 'list-group-item';
@@ -38,6 +50,7 @@ function showString(string, id) {
     string.demo = '(none)';
   }
 
+  // strip newlines
   badge.innerText = string.demo.replace(/(\r\n|\n|\r)/gm, "");
 
   var classification = document.createElement('span');
@@ -57,6 +70,9 @@ function showString(string, id) {
   document.querySelector('#stringList').appendChild(containerli);
 }
 
+/**
+ * Filter the displayed strings (display where any of the string properties contain the string in #searchBox)
+ */
 function searchChangeHandler() {
   var query = document.querySelector('#searchBox').value.toLowerCase();
   var names = document.querySelectorAll('.list-group-item');
@@ -81,27 +97,18 @@ function searchChangeHandler() {
   }
 }
 
-// load all strings into view
-strings.forEach(function(string, index) {
-  showString(string, index);
-});
-
-// set up click listeners
-var copyableClass = document.getElementsByClassName('list-group-item');
-
+/**
+ * Read the ID of the clicked string and feed it to the copy function
+ */
 function ClickHandler() {
   var id = this.id.split('-')[1];
   copyToClipboard(strings[id].value);
 }
 
-for (var i = 0; i < copyableClass.length; i += 1) {
-  copyableClass[i].addEventListener('click', ClickHandler, false);
-}
-
-// attach the search listener
-document.querySelector('#searchBox').addEventListener('input', searchChangeHandler);
-
-// set up enter-strike listener
+/**
+ * Keystrike handler that copies the first visible string on [enter]
+ * @param {keyStrike} event The keystrike event
+ */
 function copyOnEnter(keyStrike) {
   keyStrike = (keyStrike) ? keyStrike : ((event) ? event : null);
   if ((keyStrike.keyCode === 13) && (document.activeElement.id === 'searchBox')) {
@@ -121,4 +128,19 @@ function copyOnEnter(keyStrike) {
   }
 }
 
+// load all strings into view
+strings.forEach(function(string, index) {
+  showString(string, index);
+});
+
+// set up click listeners
+var copyableClass = document.getElementsByClassName('list-group-item');
+for (var i = 0; i < copyableClass.length; i += 1) {
+  copyableClass[i].addEventListener('click', ClickHandler, false);
+}
+
+// attach the search listener
+document.querySelector('#searchBox').addEventListener('input', searchChangeHandler);
+
+// attach enter keystrike listener
 document.onkeypress = copyOnEnter;
