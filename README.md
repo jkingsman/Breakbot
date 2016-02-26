@@ -32,11 +32,13 @@ Install this from the [Chrome store](https://chrome.google.com/webstore/detail/p
 
 4. Build it, using any of the following commands:
 
-| `gulp` command  | result |
-| ------------- | ------------- |
-| `gulp`  | Lint the code and build the `src` directory into the `dist` directory. `dist` can be imported as an unpacked extension.  |
-| `gulp zip`  | Lint the code and build the `src` directory into the `dist` directory, then zip the `dist` directory into `Breakbot.zip` in the root `BreakBot` folder.  |
-| `gulp watch`  | Build the `src` directory into the `dist` directory and rebuild on changes to `src`.  |
+  | `gulp` command  | result |
+  | ------------- | ------------- |
+  | `gulp`  | Lint the code and build the `src` directory into the `dist` directory. `dist` can be imported as an unpacked extension.  |
+  | `gulp zip`  | Lint the code and build the `src` directory into the `dist` directory, then zip the `dist` directory into `Breakbot.zip` in the root `BreakBot` folder.  |
+  | `gulp watch`  | Build the `src` directory into the `dist` directory and rebuild on changes to `src`.  |
+
+5. Load into Chrome as an [unpacked extension](http://techapple.net/2015/09/how-to-install-load-unpacked-extension-in-google-chrome-browser-os-chromebooks/)
 
 ## License
 MIT.
