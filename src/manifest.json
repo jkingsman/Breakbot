@@ -21,5 +21,12 @@
     "16": "img/breakbot-16.png",
     "48": "img/breakbot-48.png",
     "128": "img/breakbot-128.png"
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+B"
+      }
+    }
   }
 }
