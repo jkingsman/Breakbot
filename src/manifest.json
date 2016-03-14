@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Breakbot",
   "short_name": "Breakbot",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "description": "Quickly add disruptive unicode, naughty strings, and more to your clipboard.",
   "author": "Jack Kingsman <jack.kingsman@gmail.com>",
   "homepage_url": "https://github.com/jkingsman/Breakbot",
